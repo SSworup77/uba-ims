@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node index.js"
   },
+  "keywords": [
+    "cli",
+    "user-management",
+    "crud"
+  ],
   "author": "Sworup",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "commander": "^13.1.0",
-    "lowdb": "^7.0.1"
+    "lowdb": "^1.0.0"
   }
 }
