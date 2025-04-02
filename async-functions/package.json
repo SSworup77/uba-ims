@@ -11,6 +11,6 @@
     "lint":"eslint --fix"
   },
   "lint-staged": {
-    "*.js": "npm run lint"
+    "*.{js}": "npm run lint"
   }
 }
