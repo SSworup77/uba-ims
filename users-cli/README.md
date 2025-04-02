@@ -4,6 +4,6 @@
 
 ### 1. Create user
 
-```bash
+```console
 node index.js user:create John Doe
 ```
