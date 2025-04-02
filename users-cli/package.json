@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js",
+    "prepare": "husky"
   },
   "keywords": [
     "cli",
@@ -16,5 +17,8 @@
   "dependencies": {
     "commander": "^13.1.0",
     "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
