@@ -41,6 +41,8 @@ program
     });
   });
 
+
+//delete user
 program
   .command('user:delete <id>')
   .description('Delete a user')
@@ -57,4 +59,23 @@ program
     
     console.log(`User with ID ${userID} deleted successfully`)
   })
+
+program
+  .command('user:update <id> <fname> <lname>')
+  .description('Update a user')
+  .action((id, fname, lname) => {
+    const userID=parseInt(id)
+    const user = db.get('users').find({id:userID}).value();
+
+    if(!user){
+      console.log('User not found');
+    }
+    db.get('users')
+      .find({id:userID})
+      .assign({fname, lname})
+      .write()
+
+    console.log(`User with ID ${userID} updated with ${fname} ${lname}`)
+  })
+
 program.parse(process.argv);
