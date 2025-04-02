@@ -7,10 +7,10 @@
     "lint-staged": "^15.5.0"
   },
   "scripts": {
-    "prepare": "husky || true",
-    "lint":"eslint --fix"
+    "prepare": "husky",
+    "lint":"eslint "
   },
   "lint-staged": {
-    "*.js": "npm run lint"
+    "**/*.js": "eslist --fix"
   }
 }
