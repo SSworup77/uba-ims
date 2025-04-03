@@ -7,7 +7,7 @@ var sum=a+b
 console.log(sum)
 
 function example(arg=1){
-    if(arg==1){
+    if(arg===1){
         //dom something
     }
     else if(arg==2){
