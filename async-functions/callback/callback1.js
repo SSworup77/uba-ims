@@ -1,9 +1,10 @@
-const dream="This is unused variable"  
-print(dream)
-const drea4="This is unused variable"  
+const fs=require('fs')
 
-var a=4;
-var b=5;
-
-var sum=a+b;
-console.log(sum);
+const path = require('path')
+fs.readFile('uba-ims/async-functions/callback/file.txt','utf8',(err,data)=>{
+    if(err){
+        console.log(err)
+        return 
+    }
+    console.log(data)
+})
