@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lint-staged || || { echo "❌ Linting failed! Fix errors before committing."; exit 1; }
+npm run lint
