@@ -25,9 +25,11 @@ const dataDir = path.join(__dirname, '..', 'data')
 if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir)
 }
+console.log(`Data directory: ${dataDir}`)
 
 // users file
 const usersFile = path.join(dataDir, 'users.json')
+console.log(usersFile)
 let users = [];
 
 if (fs.existsSync(usersFile)) {

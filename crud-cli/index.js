@@ -3,5 +3,6 @@ console.log('-------------------------------------------');
 console.log('Commands:');
 console.log('- npm run user:create fname <Name> lname <Surname>');
 console.log('- npm run user:read [id <UserID> | fname <Name> [lname <Surname>]]');
+console.log('- npm run user:update id <UserID> [fname <NewName>] || [lname <NewSurname>]');
 console.log('- npm run user:delete fname <Name> [--all]');
 console.log('- npm run user:delete id <UserID>');

@@ -8,7 +8,8 @@
     "start": "node index.js",
     "user:create": "node scripts/user-create.js",
     "user:read": "node scripts/user-read.js",
-    "user:delete": "node scripts/user-delete.js"
+    "user:delete": "node scripts/user-delete.js",
+    "user:update": "node scripts/user-update.js"
   },
   "author": "Sworup",
   "license": "ISC"
