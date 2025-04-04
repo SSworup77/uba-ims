@@ -33,14 +33,17 @@ if(userIndex===-1){
     console.error(`User with ID ${userId} not found.`)
     process.exit(1)
 }
+// update firstname 
 if(fnameIndex!==-1){
     const newName=args[fnameIndex+1]
     users[userIndex].firstName=newName
 }
+// update lastname
 if(lnameIndex!==-1){
     const newSurname=args[lnameIndex+1]
     users[userIndex].lastName=newSurname
 }
+// adding updated date
 users[userIndex].updateAt=new Date().toISOString()
 fs.writeFileSync(userFile,JSON.stringify(users,null,2))
 console.log(`User with ID ${userId} updated successfully.`)

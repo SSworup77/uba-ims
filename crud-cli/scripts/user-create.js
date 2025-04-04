@@ -3,7 +3,6 @@ const path = require('path')
 
 const args = process.argv.slice(2);
 
-// Check for the correct format
 if (args.length < 3 || args[0] !== 'fname') {
     console.error('Usage: npm run user:create fname <Name> lname <Surname>')
     process.exit(1)
