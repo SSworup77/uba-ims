@@ -6,11 +6,7 @@
     "start": "node index.js",
     "prepare": "husky"
   },
-  "keywords": [
-    "cli",
-    "user-management",
-    "crud"
-  ],
+  "keywords": [],
   "author": "Sworup",
   "license": "ISC",
   "description": "",

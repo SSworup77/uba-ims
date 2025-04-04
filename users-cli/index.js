@@ -60,6 +60,7 @@ program
     console.log(`User with ID ${userID} deleted successfully`)
   })
 
+  //updata user
 program
   .command('user:update <id> <fname> <lname>')
   .description('Update a user')

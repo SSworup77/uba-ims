@@ -1,0 +1,15 @@
+{
+  "name": "crud-cli",
+  "version": "1.0.0",
+  "description": "\"CRUD cli for user's informations\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "user:create": "node scripts/user-create.js",
+    "user:read": "node scripts/user-read.js",
+    "user:delete": "node scripts/user-delete.js"
+  },
+  "author": "Sworup",
+  "license": "ISC"
+}
