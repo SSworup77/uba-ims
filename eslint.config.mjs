@@ -6,4 +6,9 @@ export default defineConfig([
   { files: ["**/*.{js,mjs,cjs}"] },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"] },
+  { 
+    rules: {
+      "no-unused-vars": "error"
+    }
+  }
 ]);
